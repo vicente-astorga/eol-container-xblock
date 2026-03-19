@@ -51,7 +51,7 @@ class TestEolContainerXBlock(UrlResetMixin, ModuleStoreTestCase):
         # create a course
         self.course = CourseFactory.create(org='mss', course='999',
                                            display_name='xblock tests')
-
+        # cambio test
         # create Xblock
         self.xblock = self.make_an_xblock()
         # Patch the comment client user save method so it does not try
