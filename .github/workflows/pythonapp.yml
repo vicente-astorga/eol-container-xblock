@@ -3,14 +3,14 @@ name: Python application
 on:
   push:
     branches:
-      - 'eol-release/*'
+      - 'vastorga/test-pr-wf'
   pull_request_target:
     types:
       - opened
       - reopened
       - synchronize
     branches:
-      - 'eol-release/*'
+      - 'vastorga/test-pr-wf'
 
 jobs:
   test:
