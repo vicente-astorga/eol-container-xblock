@@ -17,8 +17,10 @@ jobs:
     uses: eol-uchile/workflow-commons/.github/workflows/pythonapp.yml@vastorga/environment
     with:
       environment: 'cmmedu' 
+      app_id: ${{ vars.EOLITO_BOT_APP_ID }}
       django-lms: true
       django-cms: false
       platform-eol: true
       platform-openuchile: true
-    secrets: inherit
+    secrets:
+      private_key: ${{ secrets.EOLITO_BOT_PRIVATE_KEY }}
